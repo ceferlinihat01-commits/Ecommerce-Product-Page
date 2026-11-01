@@ -1,0 +1,134 @@
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 50px;
+    border-bottom: 1px solid gray;
+}
+h1:hover{
+    color: red;
+}
+nav a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 20px;
+}
+nav a:hover{
+    color: orange;
+}
+.product-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+.product-container img:hover{
+    transform: scale(1.05);
+}
+.company-name {
+    color: orange;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.price span{
+    background-color: black;  
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.old-price{
+    text-decoration: line-through;
+}
+button:hover{
+    background-color: orange;
+    color: white
+}
+
+button{
+    background-color: orange;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f7f8fd;
+    border-radius: 8px;
+}
+.quantity-button{
+    background-color: #f7f8fd;
+    color: orange;
+    border: none;
+}
+.quantity-button:hover{
+    background-color: lightgray;
+}
+.quantity span{
+    color: black;
+   font-weight: bold;
+   background-color: #f7f8fd;
+}
+.cart-actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media(max-width:600px){
+    .product-container{
+        flex-direction: column;
+    }
+    .cart-actions{
+        flex-direction: column;
+        align-items: stretch
+        ;
+    }
+}
+.product-info p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: gray;
+}
+.product-info{
+    max-width: 450px;
+}
+.thumbnails img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.thumbnails img:hover{
+    transform: scale(2);
+    position: relative;
+    z-index: 100;
+}
+.thumbnails{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.product-gallery{
+    width: 400px;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+.product-gallery > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cart-icon{
+    margin-left: auto;
+    font-size: 24px;
+    cursor: pointer;
+}
